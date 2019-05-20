@@ -32,7 +32,7 @@ public final class RunicArcanium {
 	//private static ExampleMod instance = null
 
 	/** ID of this Mod. */
-	public static final String MODID = "technomancy";
+	public static final String MODID = "runicarcanium";
 
 	/** Display name of this Mod. */
 	public static final String NAME = "RunicArcanium";
