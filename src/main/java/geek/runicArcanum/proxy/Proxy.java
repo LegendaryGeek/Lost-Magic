@@ -1,6 +1,6 @@
-package geek.technomancy.proxy;
+package geek.runicArcanum.proxy;
 
-import geek.technomancy.init.ModFluids;
+import geek.runicArcanum.init.ModFluids;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInterModComms.IMCEvent;

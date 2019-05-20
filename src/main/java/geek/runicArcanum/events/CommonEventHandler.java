@@ -1,9 +1,9 @@
-package geek.technomancy.events;
+package geek.runicArcanum.events;
 
-import geek.technomancy.Technomancy;
-import geek.technomancy.block.GeoStone;
-import geek.technomancy.init.ModBlocks;
-import geek.technomancy.init.ModFluids;
+import geek.runicArcanum.RunicArcanium;
+import geek.runicArcanum.block.GeoStone;
+import geek.runicArcanum.init.ModBlocks;
+import geek.runicArcanum.init.ModFluids;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -19,7 +19,7 @@ import net.minecraftforge.fml.relauncher.Side;
 /**
  *
  */
-@Mod.EventBusSubscriber(value = {Side.CLIENT, Side.SERVER}, modid = Technomancy.MODID)
+@Mod.EventBusSubscriber(value = {Side.CLIENT, Side.SERVER}, modid = RunicArcanium.MODID)
 public final class CommonEventHandler {
 
 	/**
@@ -90,7 +90,7 @@ public final class CommonEventHandler {
 	 */
 	private static Block setupBlock(final Block block, final String name) {
 		block.setRegistryName(name);
-		block.setTranslationKey(Technomancy.MODID + "." + name);
+		block.setTranslationKey(RunicArcanium.MODID + "." + name);
 
 		return block;
 	}
@@ -116,7 +116,7 @@ public final class CommonEventHandler {
 	 */
 	private static Item setupItem(final Item item, final String name) {
 		item.setRegistryName(name);
-		item.setTranslationKey(Technomancy.MODID + "." + name);
+		item.setTranslationKey(RunicArcanium.MODID + "." + name);
 
 		return item;
 	}

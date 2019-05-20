@@ -1,4 +1,4 @@
-package geek.technomancy.caps;
+package geek.runicArcanum.caps;
 
 import net.minecraft.nbt.NBTBase;
 import net.minecraft.nbt.NBTTagCompound;

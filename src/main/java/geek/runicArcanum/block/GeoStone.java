@@ -1,4 +1,4 @@
-package geek.technomancy.block;
+package geek.runicArcanum.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

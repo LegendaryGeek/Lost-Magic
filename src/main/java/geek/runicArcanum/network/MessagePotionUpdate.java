@@ -1,8 +1,8 @@
-package geek.technomancy.network;
+package geek.runicArcanum.network;
 
-import geek.technomancy.Technomancy;
-import geek.technomancy.caps.ExampleCapabilities;
-import geek.technomancy.caps.IExampleCapability;
+import geek.runicArcanum.RunicArcanium;
+import geek.runicArcanum.caps.ExampleCapabilities;
+import geek.runicArcanum.caps.IExampleCapability;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -49,7 +49,7 @@ public class MessagePotionUpdate implements IMessage {
 			final FMLCommonHandler handler = FMLCommonHandler.instance();
 			handler.getWorldThread(ctx.getClientHandler()).addScheduledTask(
 					() -> {
-						TileEntity te = Technomancy.getWorld().getTileEntity(message.pos);
+						TileEntity te = RunicArcanium.getWorld().getTileEntity(message.pos);
 						IExampleCapability caps = te.getCapability(ExampleCapabilities.EXAMPLE_CAPABILITY, null);
 						if(caps != null)
 							caps.deserializeNBT(message.potionUpdateData);

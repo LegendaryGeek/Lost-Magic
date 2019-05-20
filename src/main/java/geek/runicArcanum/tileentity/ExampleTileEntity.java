@@ -1,4 +1,4 @@
-package geek.technomancy.tileentity;
+package geek.runicArcanum.tileentity;
 
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;

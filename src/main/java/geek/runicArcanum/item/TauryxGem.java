@@ -1,4 +1,4 @@
-package geek.technomancy.item;
+package geek.runicArcanum.item;
 
 import net.minecraft.item.Item;
 

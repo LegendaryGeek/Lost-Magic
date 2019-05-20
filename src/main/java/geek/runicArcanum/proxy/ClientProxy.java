@@ -1,4 +1,4 @@
-package geek.technomancy.proxy;
+package geek.runicArcanum.proxy;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.World;

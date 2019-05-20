@@ -1,6 +1,6 @@
-package geek.technomancy.util;
+package geek.runicArcanum.util;
 
-import geek.technomancy.Technomancy;
+import geek.runicArcanum.RunicArcanium;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -10,8 +10,8 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 /**
  *
  */
-@Mod.EventBusSubscriber(modid = Technomancy.MODID)
-@Config(modid = Technomancy.MODID, category = "")
+@Mod.EventBusSubscriber(modid = RunicArcanium.MODID)
+@Config(modid = RunicArcanium.MODID, category = "")
 public final class ExampleModConfig {
 
 	/**
@@ -38,8 +38,8 @@ public final class ExampleModConfig {
 	 */
 	@SubscribeEvent
 	public static void onConfigChanged(final ConfigChangedEvent.OnConfigChangedEvent event) {
-		if (event.getModID().equals(Technomancy.MODID)) {
-			ConfigManager.sync(Technomancy.MODID, Config.Type.INSTANCE);
+		if (event.getModID().equals(RunicArcanium.MODID)) {
+			ConfigManager.sync(RunicArcanium.MODID, Config.Type.INSTANCE);
 		}
 	}
 }

@@ -1,4 +1,4 @@
-package geek.technomancy.fluid;
+package geek.runicArcanum.fluid;
 
 import javax.annotation.Nonnull;
 

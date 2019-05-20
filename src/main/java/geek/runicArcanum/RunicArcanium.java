@@ -1,9 +1,9 @@
-package geek.technomancy;
+package geek.runicArcanum;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import geek.technomancy.proxy.Proxy;
+import geek.runicArcanum.proxy.Proxy;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -16,16 +16,16 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  *
  */
 @Mod(
-	modid = Technomancy.MODID,
-	name = Technomancy.NAME,
-	version = Technomancy.VERSION,
+	modid = RunicArcanium.MODID,
+	name = RunicArcanium.NAME,
+	version = RunicArcanium.VERSION,
 	dependencies = "required-after:forge@[14.23.4.2705,)",
 	useMetadata = false,
 	clientSideOnly = false,
 	serverSideOnly = false,
 	acceptedMinecraftVersions = "[1.12.2]",
 	canBeDeactivated = false)
-public final class Technomancy {
+public final class RunicArcanium {
 
 	/* The Mod's Instance. */
 	//@Mod.Instance
@@ -35,7 +35,7 @@ public final class Technomancy {
 	public static final String MODID = "technomancy";
 
 	/** Display name of this Mod. */
-	public static final String NAME = "Technomancy";
+	public static final String NAME = "RunicArcanium";
 
 	/** Version of this Mod. */
 	public static final String VERSION = "0.0.0";
@@ -44,7 +44,7 @@ public final class Technomancy {
 	/**
 	 *
 	 */
-	public static final Logger LOGGER = LogManager.getLogger(Technomancy.MODID);
+	public static final Logger LOGGER = LogManager.getLogger(RunicArcanium.MODID);
 
 	/**
 	 *
@@ -54,7 +54,7 @@ public final class Technomancy {
 		/**
 		 * The Instance.
 		 */
-		private static final Technomancy INSTANCE = new Technomancy();
+		private static final RunicArcanium INSTANCE = new RunicArcanium();
 	}
 
 	/**
@@ -62,7 +62,7 @@ public final class Technomancy {
 	 * @return The Mod's Instance.
 	 */
 	@Mod.InstanceFactory
-	public static Technomancy instance() {
+	public static RunicArcanium instance() {
 		return InstanceHolder.INSTANCE;
 	}
 
@@ -70,8 +70,8 @@ public final class Technomancy {
 	 *
  	 */
 	@SidedProxy(
-				clientSide = "geek.technomancy.proxy.ClientProxy",
-				serverSide = "geek.technomancy.examplemod.proxy.ServerProxy")
+				clientSide = "geek.runicArcanum.proxy.ClientProxy",
+				serverSide = "geek.runicArcanum.examplemod.proxy.ServerProxy")
 	private static Proxy proxy = null;
 
 	/**

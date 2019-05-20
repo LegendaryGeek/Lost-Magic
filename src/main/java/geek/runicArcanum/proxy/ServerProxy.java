@@ -1,4 +1,4 @@
-package geek.technomancy.proxy;
+package geek.runicArcanum.proxy;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;

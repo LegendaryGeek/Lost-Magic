@@ -1,13 +1,13 @@
-package geek.technomancy.init;
+package geek.runicArcanum.init;
 
-import geek.technomancy.Technomancy;
+import geek.runicArcanum.RunicArcanium;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
  *
  */
-@GameRegistry.ObjectHolder(Technomancy.MODID)
+@GameRegistry.ObjectHolder(RunicArcanium.MODID)
 public final class ModItems {
 
 	/**
