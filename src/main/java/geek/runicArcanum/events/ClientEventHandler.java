@@ -37,8 +37,8 @@ public final class ClientEventHandler {
 	 */
 	@SubscribeEvent
 	public static void registerModels(final ModelRegistryEvent event) {
-		registerModel(Item.getItemFromBlock(ModBlocks.GeoStone));
-		registerFluidRender(ModBlocks.EXAMPLE_FLUID, ModFluids.EXAMPLE_FLUID);
+		registerModel(Item.getItemFromBlock(ModBlocks.TauryxOre));
+		registerFluidRender(ModBlocks.CloudResidue, ModFluids.CloudResidue);
 		registerModel(ModItems.EXAMPLE_ITEM);
 	}
 

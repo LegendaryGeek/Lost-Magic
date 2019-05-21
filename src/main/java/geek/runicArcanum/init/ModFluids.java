@@ -20,7 +20,7 @@ public final class ModFluids {
 	/**
 	 *
 	 */
-	public static final Fluid EXAMPLE_FLUID = new Fluid("example_fluid",
+	public static final Fluid CloudResidue = new Fluid("example_fluid",
 			new ResourceLocation(RunicArcanium.MODID, "blocks/example_fluid_still"),
 			new ResourceLocation(RunicArcanium.MODID, "blocks/example_fluid_flow"));
 
@@ -28,12 +28,12 @@ public final class ModFluids {
 	 *
 	 */
 	public static void init() {
-		EXAMPLE_FLUID.setDensity(1);
-		EXAMPLE_FLUID.setViscosity(1);
-		EXAMPLE_FLUID.setTemperature(1);
-		EXAMPLE_FLUID.setLuminosity(1);
-		EXAMPLE_FLUID.setUnlocalizedName(RunicArcanium.MODID + "." + "example_fluid");
-		FluidRegistry.registerFluid(EXAMPLE_FLUID);
-		FluidRegistry.addBucketForFluid(EXAMPLE_FLUID);
+		CloudResidue.setDensity(1);
+		CloudResidue.setViscosity(1);
+		CloudResidue.setTemperature(1);
+		CloudResidue.setLuminosity(1);
+		CloudResidue.setUnlocalizedName(RunicArcanium.MODID + "." + "example_fluid");
+		FluidRegistry.registerFluid(CloudResidue);
+		FluidRegistry.addBucketForFluid(CloudResidue);
 	}
 }

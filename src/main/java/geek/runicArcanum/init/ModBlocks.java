@@ -20,10 +20,10 @@ public final class ModBlocks {
 	/**
 	 *
 	 */
-    public static final Block GeoStone = null;
+    public static final Block TauryxOre = null;
 
 	/**
 	 *
 	 */
-	public static final Block EXAMPLE_FLUID = null;
+	public static final Block CloudResidue = null;
 }

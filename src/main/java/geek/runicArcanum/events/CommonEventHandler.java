@@ -1,7 +1,7 @@
 package geek.runicArcanum.events;
 
 import geek.runicArcanum.RunicArcanium;
-import geek.runicArcanum.block.GeoStone;
+import geek.runicArcanum.block.TauryxOre;
 import geek.runicArcanum.init.ModBlocks;
 import geek.runicArcanum.init.ModFluids;
 import net.minecraft.block.Block;
@@ -57,9 +57,9 @@ public final class CommonEventHandler {
 	 */
 	@SubscribeEvent
 	public static void registerBlocks(final RegistryEvent.Register<Block> event) {
-		event.getRegistry().register(setupBlock(new GeoStone(), "geostone"));
+		event.getRegistry().register(setupBlock(new TauryxOre(), "geostone"));
 		event.getRegistry().register(setupBlock(
-				new BlockFluidClassic(ModFluids.EXAMPLE_FLUID, Material.LAVA), "example_fluid"));
+				new BlockFluidClassic(ModFluids.CloudResidue, Material.LAVA), "example_fluid"));
 	}
 
 	/**
@@ -68,8 +68,8 @@ public final class CommonEventHandler {
 	 */
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
-		event.getRegistry().register(setupItemBlock(ModBlocks.GeoStone));
-		event.getRegistry().register(setupItemBlock(ModBlocks.EXAMPLE_FLUID));
+		event.getRegistry().register(setupItemBlock(ModBlocks.TauryxOre));
+		event.getRegistry().register(setupItemBlock(ModBlocks.CloudResidue));
 		event.getRegistry().register(setupItem(new Item(), "example_item"));
 	}
 

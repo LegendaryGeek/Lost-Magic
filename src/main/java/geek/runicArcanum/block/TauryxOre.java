@@ -6,12 +6,12 @@ import net.minecraft.block.material.Material;
 /**
  *
  */
-public class GeoStone extends Block {
+public class TauryxOre extends Block {
 
 	/**
 	 *
  	 */
-	public GeoStone() {
+	public TauryxOre() {
 		super(Material.ROCK);
 	}
 }
