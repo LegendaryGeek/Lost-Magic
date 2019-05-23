@@ -1,13 +1,13 @@
 package geek.runicArcanum.init;
 
-import geek.runicArcanum.RunicArcanium;
+import geek.runicArcanum.RunicArcanum;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
  *
  */
-@GameRegistry.ObjectHolder(RunicArcanium.MODID)
+@GameRegistry.ObjectHolder(RunicArcanum.MODID)
 public final class ModItems {
 
 	/**
@@ -20,5 +20,5 @@ public final class ModItems {
 	/**
 	 *
  	 */
-	public static final Item EXAMPLE_ITEM = null;
+	public static final Item TauryxGem = null;
 }

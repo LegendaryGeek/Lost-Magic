@@ -1,6 +1,6 @@
 package geek.runicArcanum.events;
 
-import geek.runicArcanum.RunicArcanium;
+import geek.runicArcanum.RunicArcanum;
 import geek.runicArcanum.block.TauryxOre;
 import geek.runicArcanum.init.ModBlocks;
 import geek.runicArcanum.init.ModFluids;
@@ -19,7 +19,7 @@ import net.minecraftforge.fml.relauncher.Side;
 /**
  *
  */
-@Mod.EventBusSubscriber(value = {Side.CLIENT, Side.SERVER}, modid = RunicArcanium.MODID)
+@Mod.EventBusSubscriber(value = {Side.CLIENT, Side.SERVER}, modid = RunicArcanum.MODID)
 public final class CommonEventHandler {
 
 	/**
@@ -90,7 +90,7 @@ public final class CommonEventHandler {
 	 */
 	private static Block setupBlock(final Block block, final String name) {
 		block.setRegistryName(name);
-		block.setTranslationKey(RunicArcanium.MODID + "." + name);
+		block.setTranslationKey(RunicArcanum.MODID + "." + name);
 
 		return block;
 	}
@@ -116,7 +116,7 @@ public final class CommonEventHandler {
 	 */
 	private static Item setupItem(final Item item, final String name) {
 		item.setRegistryName(name);
-		item.setTranslationKey(RunicArcanium.MODID + "." + name);
+		item.setTranslationKey(RunicArcanum.MODID + "." + name);
 
 		return item;
 	}

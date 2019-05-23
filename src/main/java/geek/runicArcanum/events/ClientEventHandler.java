@@ -1,6 +1,6 @@
 package geek.runicArcanum.events;
 
-import geek.runicArcanum.RunicArcanium;
+import geek.runicArcanum.RunicArcanum;
 import geek.runicArcanum.fluid.FluidStateMapper;
 import geek.runicArcanum.init.ModBlocks;
 import geek.runicArcanum.init.ModFluids;
@@ -21,7 +21,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 /**
  *
  */
-@Mod.EventBusSubscriber(value = Side.CLIENT, modid = RunicArcanium.MODID)
+@Mod.EventBusSubscriber(value = Side.CLIENT, modid = RunicArcanum.MODID)
 public final class ClientEventHandler {
 
 	/**
@@ -39,7 +39,7 @@ public final class ClientEventHandler {
 	public static void registerModels(final ModelRegistryEvent event) {
 		registerModel(Item.getItemFromBlock(ModBlocks.TauryxOre));
 		registerFluidRender(ModBlocks.CloudResidue, ModFluids.CloudResidue);
-		registerModel(ModItems.EXAMPLE_ITEM);
+		registerModel(ModItems.TauryxGem);
 	}
 
 	/**
@@ -61,7 +61,7 @@ public final class ClientEventHandler {
 		// final Block block = fluid.getBlock(); // Unfortunately this breaks when
 		// another mod registered it's fluid before us.
 		final Item item = Item.getItemFromBlock(block);
-		final ResourceLocation resourceLocation = new ResourceLocation(RunicArcanium.MODID, fluid.getName());
+		final ResourceLocation resourceLocation = new ResourceLocation(RunicArcanum.MODID, fluid.getName());
 		final FluidStateMapper mapper = new FluidStateMapper(
 				resourceLocation.getNamespace() + ":" + fluid.getName());
 

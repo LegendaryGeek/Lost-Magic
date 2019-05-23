@@ -16,16 +16,16 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  *
  */
 @Mod(
-	modid = RunicArcanium.MODID,
-	name = RunicArcanium.NAME,
-	version = RunicArcanium.VERSION,
+	modid = RunicArcanum.MODID,
+	name = RunicArcanum.NAME,
+	version = RunicArcanum.VERSION,
 	dependencies = "required-after:forge@[14.23.4.2705,)",
 	useMetadata = false,
 	clientSideOnly = false,
 	serverSideOnly = false,
 	acceptedMinecraftVersions = "[1.12.2]",
 	canBeDeactivated = false)
-public final class RunicArcanium {
+public final class RunicArcanum {
 
 	/* The Mod's Instance. */
 	//@Mod.Instance
@@ -35,7 +35,7 @@ public final class RunicArcanium {
 	public static final String MODID = "runicarcanium";
 
 	/** Display name of this Mod. */
-	public static final String NAME = "RunicArcanium";
+	public static final String NAME = "RunicArcanum";
 
 	/** Version of this Mod. */
 	public static final String VERSION = "0.0.0";
@@ -44,7 +44,7 @@ public final class RunicArcanium {
 	/**
 	 *
 	 */
-	public static final Logger LOGGER = LogManager.getLogger(RunicArcanium.MODID);
+	public static final Logger LOGGER = LogManager.getLogger(RunicArcanum.MODID);
 
 	/**
 	 *
@@ -54,7 +54,7 @@ public final class RunicArcanium {
 		/**
 		 * The Instance.
 		 */
-		private static final RunicArcanium INSTANCE = new RunicArcanium();
+		private static final RunicArcanum INSTANCE = new RunicArcanum();
 	}
 
 	/**
@@ -62,7 +62,7 @@ public final class RunicArcanium {
 	 * @return The Mod's Instance.
 	 */
 	@Mod.InstanceFactory
-	public static RunicArcanium instance() {
+	public static RunicArcanum instance() {
 		return InstanceHolder.INSTANCE;
 	}
 

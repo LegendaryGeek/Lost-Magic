@@ -1,6 +1,6 @@
 package geek.runicArcanum.network;
 
-import geek.runicArcanum.RunicArcanium;
+import geek.runicArcanum.RunicArcanum;
 import geek.runicArcanum.caps.ExampleCapabilities;
 import geek.runicArcanum.caps.IExampleCapability;
 import io.netty.buffer.ByteBuf;
@@ -49,7 +49,7 @@ public class MessagePotionUpdate implements IMessage {
 			final FMLCommonHandler handler = FMLCommonHandler.instance();
 			handler.getWorldThread(ctx.getClientHandler()).addScheduledTask(
 					() -> {
-						TileEntity te = RunicArcanium.getWorld().getTileEntity(message.pos);
+						TileEntity te = RunicArcanum.getWorld().getTileEntity(message.pos);
 						IExampleCapability caps = te.getCapability(ExampleCapabilities.EXAMPLE_CAPABILITY, null);
 						if(caps != null)
 							caps.deserializeNBT(message.potionUpdateData);

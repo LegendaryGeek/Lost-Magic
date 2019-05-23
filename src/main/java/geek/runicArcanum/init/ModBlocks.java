@@ -1,13 +1,13 @@
 package geek.runicArcanum.init;
 
-import geek.runicArcanum.RunicArcanium;
+import geek.runicArcanum.RunicArcanum;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
  *
  */
-@GameRegistry.ObjectHolder(RunicArcanium.MODID)
+@GameRegistry.ObjectHolder(RunicArcanum.MODID)
 public final class ModBlocks {
 
 	/**
