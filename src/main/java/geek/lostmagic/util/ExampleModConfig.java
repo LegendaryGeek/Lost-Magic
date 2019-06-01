@@ -1,6 +1,6 @@
-package geek.runicArcanum.util;
+package geek.lostmagic.util;
 
-import geek.runicArcanum.RunicArcanum;
+import geek.lostmagic.LostMagic;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
@@ -10,8 +10,8 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 /**
  *
  */
-@Mod.EventBusSubscriber(modid = RunicArcanum.MODID)
-@Config(modid = RunicArcanum.MODID, category = "")
+@Mod.EventBusSubscriber(modid = LostMagic.MODID)
+@Config(modid = LostMagic.MODID, category = "")
 public final class ExampleModConfig {
 
 	/**
@@ -38,8 +38,8 @@ public final class ExampleModConfig {
 	 */
 	@SubscribeEvent
 	public static void onConfigChanged(final ConfigChangedEvent.OnConfigChangedEvent event) {
-		if (event.getModID().equals(RunicArcanum.MODID)) {
-			ConfigManager.sync(RunicArcanum.MODID, Config.Type.INSTANCE);
+		if (event.getModID().equals(LostMagic.MODID)) {
+			ConfigManager.sync(LostMagic.MODID, Config.Type.INSTANCE);
 		}
 	}
 }

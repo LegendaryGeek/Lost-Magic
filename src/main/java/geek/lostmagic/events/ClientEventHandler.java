@@ -1,10 +1,10 @@
-package geek.runicArcanum.events;
+package geek.lostmagic.events;
 
-import geek.runicArcanum.RunicArcanum;
-import geek.runicArcanum.fluid.FluidStateMapper;
-import geek.runicArcanum.init.ModBlocks;
-import geek.runicArcanum.init.ModFluids;
-import geek.runicArcanum.init.ModItems;
+import geek.lostmagic.LostMagic;
+import geek.lostmagic.fluid.FluidStateMapper;
+import geek.lostmagic.init.ModBlocks;
+import geek.lostmagic.init.ModFluids;
+import geek.lostmagic.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -21,7 +21,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 /**
  *
  */
-@Mod.EventBusSubscriber(value = Side.CLIENT, modid = RunicArcanum.MODID)
+@Mod.EventBusSubscriber(value = Side.CLIENT, modid = LostMagic.MODID)
 public final class ClientEventHandler {
 
 	/**
@@ -61,7 +61,7 @@ public final class ClientEventHandler {
 		// final Block block = fluid.getBlock(); // Unfortunately this breaks when
 		// another mod registered it's fluid before us.
 		final Item item = Item.getItemFromBlock(block);
-		final ResourceLocation resourceLocation = new ResourceLocation(RunicArcanum.MODID, fluid.getName());
+		final ResourceLocation resourceLocation = new ResourceLocation(LostMagic.MODID, fluid.getName());
 		final FluidStateMapper mapper = new FluidStateMapper(
 				resourceLocation.getNamespace() + ":" + fluid.getName());
 

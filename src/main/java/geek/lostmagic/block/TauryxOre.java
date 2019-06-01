@@ -1,4 +1,4 @@
-package geek.runicArcanum.block;
+package geek.lostmagic.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

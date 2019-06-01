@@ -1,4 +1,4 @@
-package geek.runicArcanum.caps;
+package geek.lostmagic.caps;
 
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;

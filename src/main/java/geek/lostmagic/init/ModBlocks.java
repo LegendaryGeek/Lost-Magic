@@ -1,13 +1,13 @@
-package geek.runicArcanum.init;
+package geek.lostmagic.init;
 
-import geek.runicArcanum.RunicArcanum;
+import geek.lostmagic.LostMagic;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
  *
  */
-@GameRegistry.ObjectHolder(RunicArcanum.MODID)
+@GameRegistry.ObjectHolder(LostMagic.MODID)
 public final class ModBlocks {
 
 	/**

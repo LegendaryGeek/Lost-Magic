@@ -1,8 +1,8 @@
-package geek.runicArcanum.network;
+package geek.lostmagic.network;
 
-import geek.runicArcanum.RunicArcanum;
-import geek.runicArcanum.caps.ExampleCapabilities;
-import geek.runicArcanum.caps.IExampleCapability;
+import geek.lostmagic.LostMagic;
+import geek.lostmagic.caps.ExampleCapabilities;
+import geek.lostmagic.caps.IExampleCapability;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -49,7 +49,7 @@ public class MessagePotionUpdate implements IMessage {
 			final FMLCommonHandler handler = FMLCommonHandler.instance();
 			handler.getWorldThread(ctx.getClientHandler()).addScheduledTask(
 					() -> {
-						TileEntity te = RunicArcanum.getWorld().getTileEntity(message.pos);
+						TileEntity te = LostMagic.getWorld().getTileEntity(message.pos);
 						IExampleCapability caps = te.getCapability(ExampleCapabilities.EXAMPLE_CAPABILITY, null);
 						if(caps != null)
 							caps.deserializeNBT(message.potionUpdateData);

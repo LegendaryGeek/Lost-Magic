@@ -1,4 +1,4 @@
-package geek.runicArcanum.tileentity;
+package geek.lostmagic.tileentity;
 
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;

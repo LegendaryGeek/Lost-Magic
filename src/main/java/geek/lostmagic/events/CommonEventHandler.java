@@ -1,9 +1,9 @@
-package geek.runicArcanum.events;
+package geek.lostmagic.events;
 
-import geek.runicArcanum.RunicArcanum;
-import geek.runicArcanum.block.TauryxOre;
-import geek.runicArcanum.init.ModBlocks;
-import geek.runicArcanum.init.ModFluids;
+import geek.lostmagic.LostMagic;
+import geek.lostmagic.block.TauryxOre;
+import geek.lostmagic.init.ModBlocks;
+import geek.lostmagic.init.ModFluids;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -19,7 +19,7 @@ import net.minecraftforge.fml.relauncher.Side;
 /**
  *
  */
-@Mod.EventBusSubscriber(value = {Side.CLIENT, Side.SERVER}, modid = RunicArcanum.MODID)
+@Mod.EventBusSubscriber(value = {Side.CLIENT, Side.SERVER}, modid = LostMagic.MODID)
 public final class CommonEventHandler {
 
 	/**
@@ -90,7 +90,7 @@ public final class CommonEventHandler {
 	 */
 	private static Block setupBlock(final Block block, final String name) {
 		block.setRegistryName(name);
-		block.setTranslationKey(RunicArcanum.MODID + "." + name);
+		block.setTranslationKey(LostMagic.MODID + "." + name);
 
 		return block;
 	}
@@ -116,7 +116,7 @@ public final class CommonEventHandler {
 	 */
 	private static Item setupItem(final Item item, final String name) {
 		item.setRegistryName(name);
-		item.setTranslationKey(RunicArcanum.MODID + "." + name);
+		item.setTranslationKey(LostMagic.MODID + "." + name);
 
 		return item;
 	}

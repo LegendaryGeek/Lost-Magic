@@ -1,4 +1,4 @@
-package geek.runicArcanum.fluid;
+package geek.lostmagic.fluid;
 
 import javax.annotation.Nonnull;
 

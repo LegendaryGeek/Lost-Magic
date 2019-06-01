@@ -1,9 +1,9 @@
-package geek.runicArcanum;
+package geek.lostmagic;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import geek.runicArcanum.proxy.Proxy;
+import geek.lostmagic.proxy.Proxy;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -16,26 +16,26 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  *
  */
 @Mod(
-	modid = RunicArcanum.MODID,
-	name = RunicArcanum.NAME,
-	version = RunicArcanum.VERSION,
+	modid = LostMagic.MODID,
+	name = LostMagic.NAME,
+	version = LostMagic.VERSION,
 	dependencies = "required-after:forge@[14.23.4.2705,)",
 	useMetadata = false,
 	clientSideOnly = false,
 	serverSideOnly = false,
 	acceptedMinecraftVersions = "[1.12.2]",
 	canBeDeactivated = false)
-public final class RunicArcanum {
+public final class LostMagic {
 
 	/* The Mod's Instance. */
 	//@Mod.Instance
 	//private static ExampleMod instance = null
 
 	/** ID of this Mod. */
-	public static final String MODID = "runicarcanum";
+	public static final String MODID = "lostmagic";
 
 	/** Display name of this Mod. */
-	public static final String NAME = "RunicArcanum";
+	public static final String NAME = "LostMagic";
 
 	/** Version of this Mod. */
 	public static final String VERSION = "0.0.0";
@@ -44,7 +44,7 @@ public final class RunicArcanum {
 	/**
 	 *
 	 */
-	public static final Logger LOGGER = LogManager.getLogger(RunicArcanum.MODID);
+	public static final Logger LOGGER = LogManager.getLogger(LostMagic.MODID);
 
 	/**
 	 *
@@ -54,15 +54,15 @@ public final class RunicArcanum {
 		/**
 		 * The Instance.
 		 */
-		private static final RunicArcanum INSTANCE = new RunicArcanum();
+		private static final LostMagic INSTANCE = new LostMagic();
 	}
 
 	/**
 	 *
-	 * @return The Mod's Instance.
+	 * @return The Mod's Instance. 
 	 */
 	@Mod.InstanceFactory
-	public static RunicArcanum instance() {
+	public static LostMagic instance() {
 		return InstanceHolder.INSTANCE;
 	}
 
@@ -70,8 +70,8 @@ public final class RunicArcanum {
 	 *
  	 */
 	@SidedProxy(
-				clientSide = "geek.runicArcanum.proxy.ClientProxy",
-				serverSide = "geek.runicArcanum.examplemod.proxy.ServerProxy")
+				clientSide = "geek.lostmagic.proxy.ClientProxy",
+				serverSide = "geek.lostmagic.examplemod.proxy.ServerProxy")
 	private static Proxy proxy = null;
 
 	/**
@@ -92,6 +92,7 @@ public final class RunicArcanum {
 	@Mod.EventHandler
 	public static void init(final FMLInitializationEvent event) {
 		proxy.init(event);
+		
 	}
 
 	/**

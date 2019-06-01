@@ -1,4 +1,4 @@
-package geek.runicArcanum.item;
+package geek.lostmagic.item;
 
 import net.minecraft.item.Item;
 
