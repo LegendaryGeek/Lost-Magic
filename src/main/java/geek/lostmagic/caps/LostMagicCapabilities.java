@@ -10,11 +10,11 @@ import net.minecraftforge.common.capabilities.Capability.IStorage;
 import net.minecraftforge.common.capabilities.CapabilityInject;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 
-public class ExampleCapabilities {
-	@CapabilityInject(IExampleCapability.class)
-	public static final Capability<IExampleCapability> EXAMPLE_CAPABILITY = null;
+public class LostMagicCapabilities {
+	@CapabilityInject(ILostMagicCapability.class)
+	public static final Capability<ILostMagicCapability> EXAMPLE_CAPABILITY = null;
 
-	public static class DefaultImpl implements IExampleCapability {
+	public static class DefaultImpl implements ILostMagicCapability {
 		private PotionEffect effect = null;
 
 		@Override
@@ -40,15 +40,15 @@ public class ExampleCapabilities {
 	}
 
 	public static void init() {
-		CapabilityManager.INSTANCE.register(IExampleCapability.class, 
-				new IStorage<IExampleCapability>() {
+		CapabilityManager.INSTANCE.register(ILostMagicCapability.class, 
+				new IStorage<ILostMagicCapability>() {
 					@Override
-					public NBTBase writeNBT(Capability<IExampleCapability> capability, IExampleCapability instance, EnumFacing side) {
+					public NBTBase writeNBT(Capability<ILostMagicCapability> capability, ILostMagicCapability instance, EnumFacing side) {
 						return instance.serializeNBT();
 					}
 
 					@Override
-					public void readNBT(Capability<IExampleCapability> capability, IExampleCapability instance, EnumFacing side,
+					public void readNBT(Capability<ILostMagicCapability> capability, ILostMagicCapability instance, EnumFacing side,
 							NBTBase nbt) {
 						if(nbt instanceof NBTTagCompound) instance.deserializeNBT((NBTTagCompound)nbt);
 					}

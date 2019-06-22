@@ -20,5 +20,6 @@ public final class ModItems {
 	/**
 	 *
  	 */
-	public static final Item TauryxGem = null;
+	public static final Item TauryxGem = new Item();
+	public static final Item WoodenVerdantStaff = new Item();
 }

@@ -71,7 +71,7 @@ public final class LostMagic {
  	 */
 	@SidedProxy(
 				clientSide = "geek.lostmagic.proxy.ClientProxy",
-				serverSide = "geek.lostmagic.examplemod.proxy.ServerProxy")
+				serverSide = "geek.lostmagic.proxy.ServerProxy")
 	private static Proxy proxy = null;
 
 	/**

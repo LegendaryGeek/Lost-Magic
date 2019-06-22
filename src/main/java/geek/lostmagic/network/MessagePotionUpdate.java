@@ -1,8 +1,8 @@
 package geek.lostmagic.network;
 
 import geek.lostmagic.LostMagic;
-import geek.lostmagic.caps.ExampleCapabilities;
-import geek.lostmagic.caps.IExampleCapability;
+import geek.lostmagic.caps.LostMagicCapabilities;
+import geek.lostmagic.caps.ILostMagicCapability;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -20,7 +20,7 @@ public class MessagePotionUpdate implements IMessage {
 	public MessagePotionUpdate() { }
 
 	public static MessagePotionUpdate createUpdatePacket(TileEntity te) {
-		IExampleCapability caps = te.getCapability(ExampleCapabilities.EXAMPLE_CAPABILITY, null);
+		ILostMagicCapability caps = te.getCapability(LostMagicCapabilities.EXAMPLE_CAPABILITY, null);
 		if(caps != null)
 			return new MessagePotionUpdate(te.getPos(), caps.serializeNBT());
 		else throw new IllegalArgumentException("Should only sync TileEntity.");
@@ -50,7 +50,7 @@ public class MessagePotionUpdate implements IMessage {
 			handler.getWorldThread(ctx.getClientHandler()).addScheduledTask(
 					() -> {
 						TileEntity te = LostMagic.getWorld().getTileEntity(message.pos);
-						IExampleCapability caps = te.getCapability(ExampleCapabilities.EXAMPLE_CAPABILITY, null);
+						ILostMagicCapability caps = te.getCapability(LostMagicCapabilities.EXAMPLE_CAPABILITY, null);
 						if(caps != null)
 							caps.deserializeNBT(message.potionUpdateData);
 					});
