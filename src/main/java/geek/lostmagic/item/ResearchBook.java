@@ -1,5 +1,7 @@
 package geek.lostmagic.item;
 
-public class ResearchBook {
+import net.minecraft.item.Item;
 
+public class ResearchBook extends Item {
+	
 }

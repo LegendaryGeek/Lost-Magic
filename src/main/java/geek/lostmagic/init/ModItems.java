@@ -1,6 +1,7 @@
 package geek.lostmagic.init;
 
 import geek.lostmagic.LostMagic;
+import geek.lostmagic.item.*;;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -22,4 +23,5 @@ public final class ModItems {
  	 */
 	public static final Item TauryxGem = new Item();
 	public static final Item WoodenVerdantStaff = new Item();
+	public static final Item ResearchBook = new ResearchBook();
 }
